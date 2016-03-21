@@ -10,6 +10,7 @@ var React = require('react-native');
 var {
     StyleSheet,
     View,
+    Dimensions,
     DatePickerIOS,
     TouchableOpacity,
     Navigator,
@@ -18,6 +19,7 @@ var {
 
 var Overlay = require('./overlay.js');
 var Button = require('@remobile/react-native-simple-button');
+var {width, height} = Dimensions.get('window');
 
 module.exports =  React.createClass({
     getInitialState() {
@@ -89,7 +91,7 @@ module.exports =  React.createClass({
     },
 });
 
-var sr = app.Screen;
+var sr = height;
 var styles = StyleSheet.create({
     actionSheetContainer: {
         height: sr.h-Navigator.NavigationBar.Styles.General.TotalNavHeight,
