@@ -80,7 +80,7 @@ module.exports =  React.createClass({
                     <View style={styles.separator}/>
                     <Button
                         onPress={this.onComplete}
-                        style={styles.button}>完成</Button>
+                        style={styles.button}>Cancel</Button>
                     <TouchableOpacity
                         style={styles.touchableOpacity}
                         activeOpacity={1}
