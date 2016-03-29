@@ -1,6 +1,6 @@
 {
   "name": "rn-datetime-picker-fixed",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "fixed version of @remobile/react-native-datetime-picker",
   "main": "index.js",
   "scripts": {

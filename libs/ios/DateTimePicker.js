@@ -94,7 +94,7 @@ module.exports =  React.createClass({
 var sr = height;
 var styles = StyleSheet.create({
     actionSheetContainer: {
-        height: sr.h-Navigator.NavigationBar.Styles.General.TotalNavHeight,
+        height: height-Navigator.NavigationBar.Styles.General.TotalNavHeight,
         justifyContent: "center",
         backgroundColor: 'rgba(0, 0, 0, 0.5)',
     },
