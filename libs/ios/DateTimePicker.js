@@ -6,16 +6,8 @@
 */
 'use strict';
 
-var React = require('react-native');
-var {
-    StyleSheet,
-    View,
-    Dimensions,
-    DatePickerIOS,
-    TouchableOpacity,
-    Navigator,
-    Text,
-} = React;
+import React from 'react';
+import {StyleSheet,View,Dimensions,DatePickerIOS,TouchableOpacity,Navigator,Text} from 'react-native';
 
 var Overlay = require('./overlay.js');
 var Button = require('@remobile/react-native-simple-button');
