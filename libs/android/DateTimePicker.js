@@ -1,10 +1,7 @@
 'use strict';
 
-var React = require('react-native');
-var {
-    View,
-    NativeModules,
-} = React;
+import React from 'react';
+import {View, NativeModules} from 'react-native';
 
 var RCTDateTimePicker= NativeModules.DateTimePicker;
 
