@@ -5,10 +5,13 @@ import {View, NativeModules} from 'react-native';
 
 var RCTDateTimePicker= NativeModules.DateTimePicker;
 
-
-
-module.exports =  React.createClass({
-    showDatePicker(date, callback) {
+class DateTimePicker extends React.Component
+{
+    constructor(props)
+    {
+        super(props);
+    }
+     showDatePicker(date, callback) {
         date = date || new Date();
         var options = {year:date.getFullYear(), month:date.getMonth(), day:date.getDate()};
         RCTDateTimePicker.showDatePicker(options, function (year, month, day) {
@@ -32,4 +35,6 @@ module.exports =  React.createClass({
             null
         )
     }
-});
+}
+
+export default DateTimePicker;
